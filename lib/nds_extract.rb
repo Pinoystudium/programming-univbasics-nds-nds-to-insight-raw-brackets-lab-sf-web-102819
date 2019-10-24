@@ -12,6 +12,7 @@ def directors_totals(nds)
   column_index = 0
       while column_index < nds.length do
             directors_name = nds[column_index][:name]
+            result[directors_name] = 0
             movie_index = 0
               
               while movie_index < nds[column_index][:movies].length do
